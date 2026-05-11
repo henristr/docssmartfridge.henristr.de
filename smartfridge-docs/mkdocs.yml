@@ -1,0 +1,72 @@
+site_name: SmartFridge - Docs
+site_url: https://docs.smartfridge.henristr.de
+
+theme:
+  name: material
+
+  font:
+    text: Montserrat
+    code: Red Hat Mono
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: blue
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: light blue
+      accent: deep orange
+
+  features:
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - toc.follow
+
+markdown_extensions:
+  # Standard
+  - attr_list
+  - admonition
+
+  # Code Blöcke
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # Tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # Collapsible Admonitions
+  - pymdownx.details
+
+  # Emojis & Icons
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
