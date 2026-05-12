@@ -1,19 +1,58 @@
-# Welcome to MkDocs
+# 🧊 SmartFridge Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Willkommen bei der offiziellen Dokumentation von SmartFridge.
 
-## Commands
+<div class="grid cards" markdown>
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+-   :material-rocket-launch:{ .lg .middle } __Schnellstart__
 
-## Project layout
+    ---
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    SmartFridge in wenigen Minuten einrichten.
 
-😁
+    [:octicons-arrow-right-24: Erste Schritte](getting-started.md)
+
+-   :material-book-open-page-variant:{ .lg .middle } __Dokumentation__
+
+    ---
+
+    Alle Funktionen und APIs erklärt.
+
+    [:octicons-arrow-right-24: Zur Doku](docs.md)
+
+-   :material-docker:{ .lg .middle } __Docker Setup__
+
+    ---
+
+    SmartFridge mit Docker Compose starten.
+
+    [:octicons-arrow-right-24: Docker Guide](docker.md)
+
+-   :material-home-assistant:{ .lg .middle } __Home Assistant__
+
+    ---
+
+    Integration mit Home Assistant.
+
+    [:octicons-arrow-right-24: Integration ansehen](homeassistant.md)
+
+</div>
+
+---
+
+## ✨ Features
+
+- Barcode Scanner
+- Ablaufdaten speichern
+- Benachrichtigungen
+- Digitaler Kühlschrank
+- OpenFoodFacts Integration
+- Home Assistant Support
+- Docker Support
+
+---
+
+## 🚀 Quick Start
+
+```bash
+docker compose up -d
