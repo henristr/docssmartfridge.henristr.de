@@ -1,5 +1,5 @@
 site_name: SmartFridge - Docs
-site_url: https://docssmartfridge.henristr.de
+site_url: https://docs.smartfridge.henristr.de
 
 theme:
   name: material
@@ -27,18 +27,24 @@ theme:
 
   features:
     - navigation.footer
-    - content.code.copy
-    - content.code.annotate
-    - search.highlight
-    - search.share
     - navigation.instant
     - navigation.tracking
     - navigation.sections
     - toc.follow
 
+    - search.highlight
+    - search.share
+
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
 markdown_extensions:
   # Standard
   - attr_list
+  - md_in_html
   - admonition
 
   # Code Blöcke
@@ -50,12 +56,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-
   # Tabs
   - pymdownx.tabbed:
       alternate_style: true
@@ -63,10 +63,14 @@ markdown_extensions:
   # Collapsible Admonitions
   - pymdownx.details
 
+  # Mermaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   # Emojis & Icons
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-plugins:
-  - search
