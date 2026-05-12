@@ -88,8 +88,6 @@ graph TD
 
 ## 📚 Dokumentation
 
-Nutze die Navigation auf der linken Seite, um die verschiedenen Bereiche der Dokumentation zu öffnen.
-
 !!! tip "Empfohlen"
 
     Neue Nutzer sollten mit der Installationsanleitung beginnen.
