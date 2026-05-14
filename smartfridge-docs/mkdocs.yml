@@ -1,6 +1,9 @@
 site_name: SmartFridge - Docs
 site_url: https://smartfridge.henristr.de/docs
 
+repo_url: https://github.com/henristr/SmartFridgePWA
+repo_name: henristr/SmartFridgePWA
+
 nav:
   - Startseite: index.md
   - Installation: installation.md
@@ -8,9 +11,21 @@ nav:
   - Sicherheit: sicherheit.md
   - Administration: admin.md
   - Troubleshooting: troubleshooting.md
+    
+extra:
+  homepage: https://smartfridge.henristr.de
 
 theme:
   name: material
+
+  logo: assets/logo.png
+
+  favicon: images/favicon.png
+
+  language: de
+
+  icon:
+    repo: fontawesome/brands/github
 
   font:
     text: Montserrat
