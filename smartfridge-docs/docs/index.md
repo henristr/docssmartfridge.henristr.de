@@ -90,7 +90,51 @@ graph TD
 
 !!! tip "Empfohlen"
 
-    Neue Nutzer sollten mit der Installationsanleitung beginnen.
+    Neue Nutzer sollten mit der Installationsanleitung beginnen und danach den Sicherheitsbereich lesen.
+
+<div class="grid cards" markdown>
+
+-   :material-download: __Installation__
+
+    ---
+
+    Einrichtung auf Linux, macOS, Windows und Raspberry Pi.
+
+    [:octicons-arrow-right-24: Zur Installation](installation.md)
+
+-   :material-shield-lock-outline: __Sicherheit__
+
+    ---
+
+    Produktionshinweise und bekannte Einschränkungen im aktuellen Stand.
+
+    [:octicons-arrow-right-24: Zur Sicherheit](sicherheit.md)
+
+-   :material-cog-outline: __Administration__
+
+    ---
+
+    Benutzerverwaltung, KI-Einstellungen und API-Key-Verwaltung.
+
+    [:octicons-arrow-right-24: Zur Administration](admin.md)
+
+-   :material-api: __API__
+
+    ---
+
+    Endpunkte, Authentifizierung und Beispielanfragen.
+
+    [:octicons-arrow-right-24: Zur API](api.md)
+
+-   :material-lifebuoy: __Troubleshooting__
+
+    ---
+
+    Typische Fehlerbilder und schnelle Lösungen.
+
+    [:octicons-arrow-right-24: Zum Troubleshooting](troubleshooting.md)
+
+</div>
 
 ---
 
@@ -98,9 +142,9 @@ graph TD
 
 | Projekt | Link |
 |---|---|
-| SmartFridge PWA | `github.com/henristr/SmartFridgePWA` |
-| Android App | `github.com/henristr/SmartFridgeAndroid` |
-| Home Assistant | `github.com/henristr/FridgeAssistant` |
+| SmartFridge PWA | https://github.com/henristr/SmartFridgePWA |
+| Android App | https://github.com/henristr/SmartFridgeAndroid |
+| Home Assistant | https://github.com/henristr/FridgeAssistant |
 
 ---
 

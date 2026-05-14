@@ -75,7 +75,9 @@ http://localhost:8080
 | ------------ | -------- |
 | admin        | admin    |
 
-Die Zugangsdaten können in der `app.py` angepasst werden.
+Der Standard-Admin wird beim ersten Start automatisch angelegt.
+
+Die Zugangsdaten können in der `app.py` angepasst werden:
 
 ```python title="app.py" linenums="1" hl_lines="1"
 return {"admin": {"password": "admin", "diet": ""}}
@@ -116,11 +118,27 @@ return {"admin": {"password": "admin", "diet": ""}}
 
 ---
 
+## 👨‍💼 Administration nach der Installation
+
+!!! tip "Admin-Funktionen"
+
+    Der Benutzer `admin` kann Benutzer verwalten, KI-Einstellungen ändern und den externen API-Key setzen.
+
+- Benutzer hinzufügen und löschen (der Benutzer `admin` selbst kann nicht gelöscht werden)
+- KI-Anbieter und Modell konfigurieren
+- API-Key für externe API generieren und speichern
+
+---
+
 ## 📲 PWA & Mobile Nutzung
 
 !!! tip "Progressive Web App"
 
     SmartFridge kann auf Smartphones wie eine normale App installiert werden.
+
+!!! info "Aktueller Stand"
+
+    Die PWA-Installation ist vorhanden. Ein vollwertiger Offline-Modus ist aktuell noch nicht aktiv.
 
 ### Installation
 
@@ -235,8 +253,9 @@ Die Dateien werden beim ersten Start automatisch erstellt.
 | `produkte.json`  | Kühlschrank-Inhalt                  |
 | `users.json`     | Benutzerkonten und Passwörter       |
 | `rezepte.json`   | Generierte und gespeicherte Rezepte |
-| `ai-config.json` | KI-Konfiguration                    |
-| `config.py`      | Alternative zur `ai-config.json`    |
+| `ai_config.json` | KI-Konfiguration                    |
+| `config.json`    | API-Key für externe API             |
+| `config.py`      | Fallback-Konfiguration (Gemini)     |
 
 ??? danger "Dateien löschen"
 
@@ -264,6 +283,12 @@ graph TD
     Benutzer und Passwörter werden aktuell unverschlüsselt in der `users.json` gespeichert.
 
     Deshalb sollte SmartFridge nicht ungeschützt öffentlich erreichbar sein.
+
+!!! warning "Produktionsbetrieb"
+
+    In der Standardkonfiguration läuft die Anwendung mit Debug-Modus und statischem Session-Secret.
+
+    Nutze SmartFridge nur hinter einem Reverse Proxy mit TLS und ohne direkte öffentliche Freigabe.
 
 ---
 
@@ -299,6 +324,16 @@ graph TD
 | Linux        | ✅          |
 | macOS        | ✅          |
 | Raspberry Pi | ✅          |
+
+---
+
+## 🍳 Rezepte, Favoriten und Ablaufdaten
+
+SmartFridge speichert generierte Rezepte pro Benutzer in einer Historie.
+
+- Favorisierte Rezepte bleiben erhalten
+- Nicht favorisierte Rezepte werden nach 7 Tagen automatisch bereinigt
+- Produkte werden in der Oberfläche nach Ablaufdatum farblich markiert
 
 ---
 
