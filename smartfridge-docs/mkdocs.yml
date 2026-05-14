@@ -1,6 +1,14 @@
 site_name: SmartFridge - Docs
 site_url: https://docs.smartfridge.henristr.de
 
+nav:
+  - Startseite: index.md
+  - Installation: installation.md
+  - API: api.md
+  - Sicherheit: sicherheit.md
+  - Administration: admin.md
+  - Troubleshooting: troubleshooting.md
+
 theme:
   name: material
 
