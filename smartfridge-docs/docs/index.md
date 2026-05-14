@@ -2,7 +2,7 @@
 
 Willkommen bei der offiziellen Dokumentation von SmartFridge.
 
-SmartFridge ist eine moderne Open-Source-Webanwendung zur Verwaltung von Lebensmitteln, Rezepten und KI-gestützter Küchenhilfe.
+SmartFridge ist eine moderne Open-Source-Webanwendung zur Verwaltung von Lebensmitteln, Rezepten und KI-gestützter Küchenunterstützung.
 
 ---
 
