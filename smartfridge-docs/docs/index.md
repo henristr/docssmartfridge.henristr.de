@@ -106,4 +106,4 @@ graph TD
 
 ## ❤️ Open Source
 
-SmartFridge ist ein Open-Source-Projekt und wird aktiv weiterentwickelt.
+SmartFridge ist ein Open-Source Projekt und wird aktiv weiterentwickelt.
