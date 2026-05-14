@@ -1,5 +1,5 @@
 site_name: SmartFridge - Docs
-site_url: https://docs.smartfridge.henristr.de
+site_url: https://smartfridge.henristr.de/docs
 
 nav:
   - Startseite: index.md
